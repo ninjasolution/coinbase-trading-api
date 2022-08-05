@@ -78,10 +78,11 @@ app.post("/api/swap", async (req, res) => {
   try {
     signature = await sendTransaction(tx, swapContract.options.address);
   }catch (e){
-      console.log(e);
+    console.log(e);
+    return res.send({success: false, error: e.toString() })
   }
   console.log("swapped", signature.transactionHash)
-  res.send({success: true, signature: signature.transactionHash })
+  return res.send({success: true, signature: signature.transactionHash })
 
 })
 

@@ -376,7 +376,8 @@ contract SwapContract is  Ownable {
     using SafeMath for uint256;
 
     // Testnet
-    address public addressOfUSDT = address(0x7ef95a0FEE0Dd31b22626fA2e10Ee6A223F8a684);
+    // address public addressOfUSDT = address(0x7ef95a0FEE0Dd31b22626fA2e10Ee6A223F8a684); //bsc
+    address public addressOfUSDT = address(0xaD6D458402F60fD3Bd25163575031ACDce07538D); //ropsten
 
     // Mainnet
     // address public addressOfUSDT = address(0x55d398326f99059fF775485246999027B3197955);
@@ -386,7 +387,8 @@ contract SwapContract is  Ownable {
 
     constructor () {
         // Pancake Router Testnet v1
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
+        // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); //bsc
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D); //ropsten
         
         // Pancake Router Mainnet v1
         // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x10ED43C718714eb63d5aA57B78B54704E256024E);
