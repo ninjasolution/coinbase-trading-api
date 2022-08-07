@@ -6,6 +6,14 @@ const SwapContract = require("./src/blockchain/abis/SwapContract.json");
 const TokenContract = require("./src/blockchain/abis/ERC20.json");
 
 const config = require("./src/config");
+const Moralis = require("moralis/node");
+
+/* Moralis init code */
+const serverUrl = "YOUR-SERVER-URL";
+const appId = "YOUR-APP-ID";
+const masterKey = "YOUR-MASTER-KEY";
+
+await Moralis.start({ serverUrl, appId, masterKey });
 
 require('dotenv').config(); 
 
@@ -51,11 +59,45 @@ app.get("/", (req, res) => {
 });
 
 app.post("/api/swap", async (req, res) => {
+
+  var fromTokenAddress = "";
+  if(!req.body.fromTokenAddress) {
+    res.send({success: true, signature: null, error: "Require Token Symbol or Address!" })
+  }else if(checkAddress(req.body.fromTokenAddress)) {
+    fromTokenAddress = req.body.fromTokenAddress;
+  }else {
+    const options = { chain: network.toLowerCase(), symbols: req.body.fromTokenAddress };
+    const tokenMetadata = await Moralis.Web3API.token.getTokenMetadataBySymbol(
+      options
+    );
+
+    if(tokenMetadata.length === 0) return res.send({success: true, signature: null, error: "Invalid Token!" })
+    fromTokenAddress = tokenMetadata[0].address
+  }
+
   const network = req.body.network;
+  var tokenAddress = "";
+  if(checkAddress(req.body.tokenAddress)) {
+    tokenAddress = req.body.tokenAddress;
+  }else {
+    const options = { chain: network.toLowerCase(), symbols: req.body.tokenAddress };
+    const tokenMetadata = await Moralis.Web3API.token.getTokenMetadataBySymbol(
+      options
+    );
+
+    if(tokenMetadata.length === 0) return res.send({success: true, signature: null, error: "Invalide Token!" })
+    tokenAddress = tokenMetadata[0].address
+  }
+
   const amount = req.body.amount?.toString();
   console.log(config[`usdt${network}Address`])
   const _web3 = new Web3(new Web3.providers.HttpProvider(config[`${network}Provider`]));
   account = _web3.eth.accounts.privateKeyToAccount(config.privateKey)
+
+  const recipient = account.address;
+  if(checkAddress(req.body.recipient)) {
+    recipient = req.body.recipient;
+  }
 
   web3 = _web3;
   swapContract = new _web3.eth.Contract(SwapContract.abi, config[`swap${network}Address`]);
@@ -72,7 +114,7 @@ app.post("/api/swap", async (req, res) => {
   let balance = await tokenContract.methods.allowance(account.address, config[`swap${network}Address`]).call();
   console.log(balance)
   
-  tx = swapContract.methods.swapUSDTTOToken(_web3.utils.toWei(amount), req.body.tokenAddress, req.body.recipient);
+  tx = swapContract.methods.swapUSDTTOToken(fromTokenAddress, _web3.utils.toWei(amount), tokenAddress, recipient);
   //0x8a9424745056Eb399FD19a0EC26A14316684e274
   let signature = "";
   try {
@@ -117,7 +159,13 @@ const sendTransaction = async (tx, contractAddress) => {
   return await web3.eth.sendTransaction(txData);
 }
 
-
+const checkAddress = address => {
+  if(address && address.length === 42) {
+    return true;
+  }else {
+    return false;
+  }
+}
 
 
 // set port, listen for requests
