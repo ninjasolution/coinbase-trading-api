@@ -375,20 +375,14 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
 contract SwapContract is  Ownable {
     using SafeMath for uint256;
 
-    // Testnet
-    // address public addressOfUSDT = address(0x7ef95a0FEE0Dd31b22626fA2e10Ee6A223F8a684); //bsc
-    address public addressOfUSDT = address(0xaD6D458402F60fD3Bd25163575031ACDce07538D); //ropsten
-
-    // Mainnet
-    // address public addressOfUSDT = address(0x55d398326f99059fF775485246999027B3197955);
-
+   
     IUniswapV2Router02 public uniswapV2Router;
     address public uniswapV2Pair;
 
     constructor () {
         // Pancake Router Testnet v1
-        // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); //bsc
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D); //ropsten
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); //bsc
+        // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D); //ropsten
         
         // Pancake Router Mainnet v1
         // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x10ED43C718714eb63d5aA57B78B54704E256024E);
@@ -409,17 +403,16 @@ contract SwapContract is  Ownable {
         address[] path
     );
 
-    function swapUSDTTOToken(uint256 amount, address tokenAddress, address recipient) public {
+    function swapTokenToToken(address fromToken, uint256 amount, address desToken, address recipient) public {
         
         require(amount > 0, "more than 0");
 
-        IERC20(addressOfUSDT).transferFrom(msg.sender, address(this), amount);
         // Generate the uniswap pair path of token -> WETH
         address[] memory path = new address[](2);
-        path[0] = addressOfUSDT;
-        path[1] = tokenAddress;
+        path[0] = fromToken;
+        path[1] = desToken;
 
-        IERC20(addressOfUSDT).approve(address(uniswapV2Router), amount);
+        IERC20(fromToken).approve(address(uniswapV2Router), amount);
         //require(uniswapV2Router.getAmountsOut(1, path)[1] > 0, "No price");
 
         // Make the swap
@@ -434,10 +427,73 @@ contract SwapContract is  Ownable {
         emit SwapTokensForETH(amount, path);
     }
 
-    receive() external payable {}
-
-    function getNumber() external view returns(uint256) {
-        return block.timestamp;
+    function swapETHToToken(uint256 amount, address desToken, address recipient) external payable {
+        
+        // Generate the uniswap pair path of token -> WETH
+        address[] memory path = new address[](2);
+        path[0] = uniswapV2Router.WETH();
+        path[1] = desToken;
+        
+        // Make the swap
+        uniswapV2Router.swapExactETHForTokensSupportingFeeOnTransferTokens{value: amount}(
+            0, // Accept any amount of ETH
+            path,
+            recipient, // The contract
+            block.timestamp
+        );
+        
+        emit SwapTokensForETH(msg.value, path);
     }
+
+    function swapTokenToETH(address token, uint256 amount, address recipient) external payable {
+        
+        // Generate the uniswap pair path of token -> WETH
+        address[] memory path = new address[](2);
+        path[0] = token;
+        path[1] = uniswapV2Router.WETH();
+        IERC20(token).approve(address(uniswapV2Router), amount);
+        
+        // Make the swap
+        uniswapV2Router.swapExactTokensForETHSupportingFeeOnTransferTokens(
+            amount,
+            0, // Accept any amount of ETH
+            path,
+            recipient, // The contract
+            block.timestamp
+        );
+        
+        emit SwapTokensForETH(msg.value, path);
+    }
+
+    function withdrawToken(address token, uint256 amount) external onlyOwner {
+        IERC20(token).approve(address(this), amount);
+        IERC20(token).transferFrom(address(this), msg.sender, amount);
+    }
+
+    function emergencyWithdrawToken(address token) external onlyOwner {
+        IERC20(token).approve(address(this), IERC20(token).balanceOf(address(this)));
+        IERC20(token).transferFrom(address(this), msg.sender, IERC20(token).balanceOf(address(this)));
+    }
+
+    function withdrawETH(uint256 amount) external payable onlyOwner {
+        
+        payable(msg.sender).transfer(amount);
+    }
+
+    function emergencyWithdrawETH() external payable onlyOwner {
+        
+        payable(address(this)).transfer(address(this).balance);
+    }
+
+    function depositETH() external payable onlyOwner {
+        
+        payable(address(this)).transfer(msg.value);
+    }
+
+    function BalanceOfToken(address token) external view returns (uint256) {
+        
+        return IERC20(token).balanceOf(address(this));
+    }    
+    receive() external payable {}
 
 }

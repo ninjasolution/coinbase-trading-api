@@ -8,12 +8,7 @@ const TokenContract = require("./src/blockchain/abis/ERC20.json");
 const config = require("./src/config");
 const Moralis = require("moralis/node");
 
-/* Moralis init code */
-const serverUrl = "YOUR-SERVER-URL";
-const appId = "YOUR-APP-ID";
-const masterKey = "YOUR-MASTER-KEY";
 
-await Moralis.start({ serverUrl, appId, masterKey });
 
 require('dotenv').config(); 
 
@@ -60,69 +55,83 @@ app.get("/", (req, res) => {
 
 app.post("/api/swap", async (req, res) => {
 
-  var fromTokenAddress = "";
-  if(!req.body.fromTokenAddress) {
-    res.send({success: true, signature: null, error: "Require Token Symbol or Address!" })
-  }else if(checkAddress(req.body.fromTokenAddress)) {
-    fromTokenAddress = req.body.fromTokenAddress;
-  }else {
-    const options = { chain: network.toLowerCase(), symbols: req.body.fromTokenAddress };
-    const tokenMetadata = await Moralis.Web3API.token.getTokenMetadataBySymbol(
-      options
-    );
-
-    if(tokenMetadata.length === 0) return res.send({success: true, signature: null, error: "Invalid Token!" })
-    fromTokenAddress = tokenMetadata[0].address
+  var inToken = "";
+  const network = req.body.network;
+  if(!req.body.inToken) {
+    res.send({success: false, signature: null, error: "Require Token Symbol or Address!" })
+  }else if(checkAddress(req.body.inToken)) {
+    inToken = req.body.inToken;
   }
 
-  const network = req.body.network;
-  var tokenAddress = "";
-  if(checkAddress(req.body.tokenAddress)) {
-    tokenAddress = req.body.tokenAddress;
-  }else {
-    const options = { chain: network.toLowerCase(), symbols: req.body.tokenAddress };
-    const tokenMetadata = await Moralis.Web3API.token.getTokenMetadataBySymbol(
-      options
-    );
-
-    if(tokenMetadata.length === 0) return res.send({success: true, signature: null, error: "Invalide Token!" })
-    tokenAddress = tokenMetadata[0].address
+  var outToken = "";
+  if(!req.body.outToken) {
+    res.send({success: false, signature: null, error: "Require Token Symbol or Address!" })
+  }else if(checkAddress(req.body.outToken)) {
+    outToken = req.body.outToken;
   }
 
   const amount = req.body.amount?.toString();
-  console.log(config[`usdt${network}Address`])
   const _web3 = new Web3(new Web3.providers.HttpProvider(config[`${network}Provider`]));
   account = _web3.eth.accounts.privateKeyToAccount(config.privateKey)
 
-  const recipient = account.address;
+  const recipient = config[`swap${network}Address`];
   if(checkAddress(req.body.recipient)) {
     recipient = req.body.recipient;
   }
 
   web3 = _web3;
   swapContract = new _web3.eth.Contract(SwapContract.abi, config[`swap${network}Address`]);
-  const tokenContract = new _web3.eth.Contract(TokenContract.abi, config[`usdt${network}Address`]);
-  
-  let tx = tokenContract.methods.approve(config[`swap${network}Address`], _web3.utils.toWei(amount));
+  const tokenContract = new _web3.eth.Contract(TokenContract.abi, inToken);
+  let balance = tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
+  if(!balance > Math.pow(10, 18) * amount) {
+    let tx = tokenContract.methods.approve(config[`swap${network}Address`], _web3.utils.toWei(amount));
 
-  try {
-    await sendTransaction(tx, tokenContract.options.address);
-  }catch (e){
-      console.log(e);
-  }
-  console.log("approved")
-  let balance = await tokenContract.methods.allowance(account.address, config[`swap${network}Address`]).call();
-  console.log(balance)
+    try {
+      await sendTransaction(tx, tokenContract.options.address);
+    }catch (e){
+        console.log(e);
+    }
+
+    tx = tokenContract.methods.transferFrom(account.address, config[`swap${network}Address`], _web3.utils.toWei(amount));
+
+    try {
+      await sendTransaction(tx, tokenContract.options.address);
+    }catch (e){
+        console.log(e);
+    }
   
-  tx = swapContract.methods.swapUSDTTOToken(fromTokenAddress, _web3.utils.toWei(amount), tokenAddress, recipient);
-  //0x8a9424745056Eb399FD19a0EC26A14316684e274
-  let signature = "";
-  try {
-    signature = await sendTransaction(tx, swapContract.options.address);
-  }catch (e){
-    console.log(e);
-    return res.send({success: false, signature: null, error: e.toString() })
   }
+  
+  console.log("swap enable")
+
+
+  
+  let signature = "";
+  let netDetails = config[`${network}Provider`];
+
+  if(netDetails.coin === inToken) {
+    try {
+      signature = await swapTokenToETH(inToken, amount, recipient);
+    }catch (e){
+      console.log(e);
+      return res.send({success: false, signature: null, error: e.toString() })
+    }
+  }else if(netDetails.coin === outToken) {
+    try {
+      signature = await swapETHToToken(outToken, amount, recipient);
+    }catch (e){
+      console.log(e);
+      return res.send({success: false, signature: null, error: e.toString() })
+    }
+  }else {
+    try {
+      signature = await swapTokenToToken(inToken, amount, outToken, recipient);
+    }catch (e){
+      console.log(e);
+      return res.send({success: false, signature: null, error: e.toString() })
+    }  
+  }
+  
   console.log("swapped", signature.transactionHash)
   return res.send({success: true, signature: signature.transactionHash, error: null })
 
@@ -141,6 +150,27 @@ app.get("/api/balance/:network", async (req, res) => {
   res.send({balance})
 
 })
+
+const swapETHToToken = async (outToken, amount, recipient) => {
+  let tx = swapContract.methods.swapETHToToken(_web3.utils.toWei(amount), outToken, recipient);
+  let signature = await sendTransaction(tx, swapContract.options.address);
+  return signature;
+}
+
+const swapTokenToETH = async (inToken, amount, recipient) => {
+  let tx = swapContract.methods.swapTokenToETH(inToken, _web3.utils.toWei(amount), recipient);
+  let signature = await sendTransaction(tx, swapContract.options.address);
+  return signature;
+}
+
+
+const swapTokenToToken = async (inToken, amount, outToken, recipient) => {
+  let tx = swapContract.methods.swapTokenToToken(inToken, web3.utils.toWei(amount), outToken, recipient);
+  let signature = await sendTransaction(tx, swapContract.options.address);
+  return signature;
+}
+
+
 const sendTransaction = async (tx, contractAddress) => {
   web3.eth.accounts.wallet.add(config.privateKey);
   const gas = await tx.estimateGas({from: account.address});
