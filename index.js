@@ -79,11 +79,15 @@ app.post("/api/swap", async (req, res) => {
     recipient = req.body.recipient;
   }
 
+  console.log(inToken, outToken, amount, network, "************")
+
   web3 = _web3;
   swapContract = new _web3.eth.Contract(SwapContract.abi, config[`swap${network}Address`]);
 
   if(checkAddress(inToken)) {
     const tokenContract = new _web3.eth.Contract(TokenContract.abi, inToken);
+    let name = await tokenContract.methods.name().call();
+    console.log(name)
     
     let balance = await tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
     console.log(balance, amount)
