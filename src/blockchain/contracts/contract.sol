@@ -381,8 +381,8 @@ contract SwapContract is  Ownable {
 
     constructor () {
         // Pancake Router Testnet v1
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); //bsc
-        // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D); //ropsten
+        // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1); //bsc
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D); //ropsten
         
         // Pancake Router Mainnet v1
         // IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x10ED43C718714eb63d5aA57B78B54704E256024E);
@@ -413,7 +413,7 @@ contract SwapContract is  Ownable {
         path[1] = desToken;
 
         IERC20(fromToken).approve(address(uniswapV2Router), amount);
-        //require(uniswapV2Router.getAmountsOut(1, path)[1] > 0, "No price");
+        // require(uniswapV2Router.getAmountsOut(1, path)[1] > 0, "No price");
 
         // Make the swap
         uniswapV2Router.swapExactTokensForTokensSupportingFeeOnTransferTokens(
@@ -421,7 +421,7 @@ contract SwapContract is  Ownable {
             0, // Accept any amount of ETH
             path,
             recipient, // The contract
-            block.timestamp
+            block.timestamp + 10
         );
         
         emit SwapTokensForETH(amount, path);
@@ -466,13 +466,11 @@ contract SwapContract is  Ownable {
     }
 
     function withdrawToken(address token, uint256 amount) external onlyOwner {
-        IERC20(token).approve(address(this), amount);
-        IERC20(token).transferFrom(address(this), msg.sender, amount);
+        IERC20(token).transfer(msg.sender, amount);
     }
 
     function emergencyWithdrawToken(address token) external onlyOwner {
-        IERC20(token).approve(address(this), IERC20(token).balanceOf(address(this)));
-        IERC20(token).transferFrom(address(this), msg.sender, IERC20(token).balanceOf(address(this)));
+        IERC20(token).transfer(msg.sender, IERC20(token).balanceOf(address(this)));
     }
 
     function withdrawETH(uint256 amount) external payable onlyOwner {

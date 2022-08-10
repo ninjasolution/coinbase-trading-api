@@ -1,6 +1,6 @@
 module.exports = {
-	swapBSCAddress: "0x92BD133ff56c08FAB474f78fF238c7DDD9692564",
-	swapETHAddress: "0x8455aCfEF7d63366cB0b16a0aCcB3fb2E47116D9",
+	swapBSCAddress: "0x381B6CF23c7d2494fb63803868F6A50471E86f32",
+	swapETHAddress: "0xcF7e9104BaA9d973DF4694Fe37be620c9B3E5863",
 	BSCProvider: {
 		node: "https://data-seed-prebsc-2-s3.binance.org:8545",
 		explorer: "https://bscscan.com/",
@@ -15,7 +15,7 @@ module.exports = {
 	ETHProvider: {
 		node: "https://ropsten.infura.io/v3/5c34343809f04bcb96e9a4aeaf19aeca",
 		explorer: "https://bscscan.com/",
-		coin: "BNB",
+		coin: "ETH",
 		tokens: [
 			{
 				symbol: "USDT",

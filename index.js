@@ -59,14 +59,14 @@ app.post("/api/swap", async (req, res) => {
   const network = req.body.network;
   if(!req.body.inToken) {
     res.send({success: false, signature: null, error: "Require Token Symbol or Address!" })
-  }else if(checkAddress(req.body.inToken)) {
+  }else{
     inToken = req.body.inToken;
   }
 
   var outToken = "";
   if(!req.body.outToken) {
     res.send({success: false, signature: null, error: "Require Token Symbol or Address!" })
-  }else if(checkAddress(req.body.outToken)) {
+  }else {
     outToken = req.body.outToken;
   }
 
@@ -81,51 +81,58 @@ app.post("/api/swap", async (req, res) => {
 
   web3 = _web3;
   swapContract = new _web3.eth.Contract(SwapContract.abi, config[`swap${network}Address`]);
-  const tokenContract = new _web3.eth.Contract(TokenContract.abi, inToken);
-  let balance = await tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
-  console.log(balance, amount)
 
-  if(!(balance > Math.pow(10, 18) * amount)) {
+  if(checkAddress(inToken)) {
+    const tokenContract = new _web3.eth.Contract(TokenContract.abi, inToken);
     
-    console.log("before transfer")
+    let balance = await tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
+    console.log(balance, amount)
 
-    let tx = tokenContract.methods.approve(config[`swap${network}Address`], _web3.utils.toWei(amount));
-    let alowanceAmount = await tokenContract.methods.allowance(account.address, config[`swap${network}Address`]).call();
-    console.log(alowanceAmount)
+    if(!(balance > Math.pow(10, 18) * amount)) {
+      
+      console.log("before transfer")
 
-    try {
-      await sendTransaction(tx, tokenContract.options.address);
-    }catch (e){
-        console.log(e, "approve error");
+      let tx = tokenContract.methods.approve(config[`swap${network}Address`], _web3.utils.toWei(amount));
+      let alowanceAmount = await tokenContract.methods.allowance(account.address, config[`swap${network}Address`]).call();
+      console.log(alowanceAmount)
+
+      try {
+        await sendTransaction(tx, tokenContract.options.address);
+      }catch (e){
+          console.log(e, "approve error");
+      }
+      console.log("approved")
+
+      tx = tokenContract.methods.transfer(config[`swap${network}Address`], _web3.utils.toWei(amount));
+
+      try {
+        await sendTransaction(tx, tokenContract.options.address);
+      }catch (e){
+          console.log(e, "transfer error");
+      }
+      console.log("Token is transfered")
+    
     }
-    console.log("approved")
-
-    tx = tokenContract.methods.transfer(config[`swap${network}Address`], _web3.utils.toWei(amount));
-
-    try {
-      await sendTransaction(tx, tokenContract.options.address);
-    }catch (e){
-        console.log(e, "transfer error");
-    }
-    console.log("Token is transfered")
-  
+    
+    console.log("swap enable")  
   }
   
-  console.log("swap enable")
 
 
-  
+  console.log(inToken, outToken, "---------------")
   let signature = "";
   let netDetails = config[`${network}Provider`];
 
-  if(netDetails.coin === inToken) {
+  if(netDetails.coin === outToken) {
+    console.log("tokenToEth", inToken, outToken)
     try {
       signature = await swapTokenToETH(inToken, amount, recipient);
     }catch (e){
       console.log(e);
       return res.send({success: false, signature: null, error: e.toString() })
     }
-  }else if(netDetails.coin === outToken) {
+  }else if(netDetails.coin === inToken) {
+    console.log("ethToToken", inToken, outToken)
     try {
       signature = await swapETHToToken(outToken, amount, recipient);
     }catch (e){
@@ -135,8 +142,7 @@ app.post("/api/swap", async (req, res) => {
   }else {
     try {
       console.log("tokenToToken", inToken, outToken)
-      signature = await swapETHToToken(outToken, amount, recipient);
-      // signature = await swapTokenToToken(inToken, amount, outToken, recipient);
+      signature = await swapTokenToToken(inToken, amount, outToken, recipient);
     }catch (e){
       console.log(e);
       return res.send({success: false, signature: null, error: e.toString() })
@@ -163,6 +169,7 @@ app.get("/api/balance/:network", async (req, res) => {
 })
 
 const swapETHToToken = async (outToken, amount, recipient) => {
+  console.log(web3.utils.toWei(amount))
   let tx = swapContract.methods.swapETHToToken(web3.utils.toWei(amount), outToken, recipient);
   let signature = await sendTransaction(tx, swapContract.options.address);
   return signature;
@@ -176,6 +183,7 @@ const swapTokenToETH = async (inToken, amount, recipient) => {
 
 
 const swapTokenToToken = async (inToken, amount, outToken, recipient) => {
+  console.log(inToken, amount, outToken, recipient)
   let tx = swapContract.methods.swapTokenToToken(inToken, web3.utils.toWei(amount), outToken, recipient);
   let signature = await sendTransaction(tx, swapContract.options.address);
   return signature;
