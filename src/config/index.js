@@ -1,8 +1,8 @@
 module.exports = {
-	swapBSCAddress: "0xaCD4F455E743196827B99258C4A8F8FC6F4194F2",
+	swapBSCAddress: "0x92BD133ff56c08FAB474f78fF238c7DDD9692564",
 	swapETHAddress: "0x8455aCfEF7d63366cB0b16a0aCcB3fb2E47116D9",
 	BSCProvider: {
-		node: "https://data-seed-prebsc-1-s1.binance.org:8545",
+		node: "https://data-seed-prebsc-2-s3.binance.org:8545",
 		explorer: "https://bscscan.com/",
 		coin: "BNB",
 		tokens: [

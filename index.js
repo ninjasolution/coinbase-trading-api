@@ -71,7 +71,7 @@ app.post("/api/swap", async (req, res) => {
   }
 
   const amount = req.body.amount?.toString();
-  const _web3 = new Web3(new Web3.providers.HttpProvider(config[`${network}Provider`]));
+  const _web3 = new Web3(new Web3.providers.HttpProvider(config[`${network}Provider`]["node"]));
   account = _web3.eth.accounts.privateKeyToAccount(config.privateKey)
 
   const recipient = config[`swap${network}Address`];
@@ -82,23 +82,32 @@ app.post("/api/swap", async (req, res) => {
   web3 = _web3;
   swapContract = new _web3.eth.Contract(SwapContract.abi, config[`swap${network}Address`]);
   const tokenContract = new _web3.eth.Contract(TokenContract.abi, inToken);
-  let balance = tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
-  if(!balance > Math.pow(10, 18) * amount) {
+  let balance = await tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
+  console.log(balance, amount)
+
+  if(!(balance > Math.pow(10, 18) * amount)) {
+    
+    console.log("before transfer")
+
     let tx = tokenContract.methods.approve(config[`swap${network}Address`], _web3.utils.toWei(amount));
+    let alowanceAmount = await tokenContract.methods.allowance(account.address, config[`swap${network}Address`]).call();
+    console.log(alowanceAmount)
 
     try {
       await sendTransaction(tx, tokenContract.options.address);
     }catch (e){
-        console.log(e);
+        console.log(e, "approve error");
     }
+    console.log("approved")
 
-    tx = tokenContract.methods.transferFrom(account.address, config[`swap${network}Address`], _web3.utils.toWei(amount));
+    tx = tokenContract.methods.transfer(config[`swap${network}Address`], _web3.utils.toWei(amount));
 
     try {
       await sendTransaction(tx, tokenContract.options.address);
     }catch (e){
-        console.log(e);
+        console.log(e, "transfer error");
     }
+    console.log("Token is transfered")
   
   }
   
@@ -125,7 +134,9 @@ app.post("/api/swap", async (req, res) => {
     }
   }else {
     try {
-      signature = await swapTokenToToken(inToken, amount, outToken, recipient);
+      console.log("tokenToToken", inToken, outToken)
+      signature = await swapETHToToken(outToken, amount, recipient);
+      // signature = await swapTokenToToken(inToken, amount, outToken, recipient);
     }catch (e){
       console.log(e);
       return res.send({success: false, signature: null, error: e.toString() })
@@ -140,10 +151,10 @@ app.post("/api/swap", async (req, res) => {
 app.get("/api/balance/:network", async (req, res) => {
   const network = req.params.network;
   console.log(network)
-  const _web3 = new Web3(new Web3.providers.HttpProvider(config[`${network}Provider`]));
+  const _web3 = new Web3(new Web3.providers.HttpProvider(config[`${network}Provider`]["node"]));
   account = _web3.eth.accounts.privateKeyToAccount(config.privateKey)
 
-  const tokenContract = new _web3.eth.Contract(TokenContract.abi, config[`usdt${network}Address`]);
+  const tokenContract = new web3.eth.Contract(TokenContract.abi, config[`usdt${network}Address`]);
   
   let balance = await tokenContract.methods.balanceOf(account.address).call();
   
@@ -152,13 +163,13 @@ app.get("/api/balance/:network", async (req, res) => {
 })
 
 const swapETHToToken = async (outToken, amount, recipient) => {
-  let tx = swapContract.methods.swapETHToToken(_web3.utils.toWei(amount), outToken, recipient);
+  let tx = swapContract.methods.swapETHToToken(web3.utils.toWei(amount), outToken, recipient);
   let signature = await sendTransaction(tx, swapContract.options.address);
   return signature;
 }
 
 const swapTokenToETH = async (inToken, amount, recipient) => {
-  let tx = swapContract.methods.swapTokenToETH(inToken, _web3.utils.toWei(amount), recipient);
+  let tx = swapContract.methods.swapTokenToETH(inToken, web3.utils.toWei(amount), recipient);
   let signature = await sendTransaction(tx, swapContract.options.address);
   return signature;
 }
@@ -199,7 +210,7 @@ const checkAddress = address => {
 
 
 // set port, listen for requests
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
