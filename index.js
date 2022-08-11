@@ -84,8 +84,6 @@ app.post("/api/swap", async (req, res) => {
 
   if(checkAddress(inToken)) {
     const tokenContract = new _web3.eth.Contract(TokenContract.abi, inToken);
-    let name = await tokenContract.methods.name().call();
-    console.log(name)
     
     let balance = await tokenContract.methods.balanceOf(config[`swap${network}Address`]).call();
     console.log(balance, amount)
@@ -95,8 +93,7 @@ app.post("/api/swap", async (req, res) => {
       console.log("before transfer")
 
       let tx = tokenContract.methods.approve(config[`swap${network}Address`], _web3.utils.toWei(amount));
-      let alowanceAmount = await tokenContract.methods.allowance(account.address, config[`swap${network}Address`]).call();
-
+    
       try {
         await sendTransaction(tx, tokenContract.options.address);
       }catch (e){
