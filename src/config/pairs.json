@@ -1,0 +1,1834 @@
+{
+    "STEEM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "PAY": {
+        "ETH": "",
+        "BSC": "0xe580074A10360404AF3ABfe2d524D5806D993ea3"
+    },
+    "ADA": {
+        "ETH": "",
+        "BSC": "0x3EE2200Efb3400fAbB9AacF31297cBdD1d435D47"
+    },
+    "EOS": {
+        "ETH": "0x86Fa049857E0209aa7D9e616F7eb3b3B78ECfdb0",
+        "BSC": "0x56b6fB708fC5732DEC1Afc8D8556423A2EDcCbD6"
+    },
+    "NAV": {
+        "ETH": "",
+        "BSC": "0xBFEf6cCFC830D3BaCA4F6766a0d4AaA242Ca9F3D"
+    },
+    "IOST": {
+        "ETH": "0xFA1a856Cfa3409CFa145Fa4e20Eb270dF3EB21ab",
+        "BSC": ""
+    },
+    "STRAT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MANA": {
+        "ETH": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
+        "BSC": "0x26433c8127d9b4e9B71Eaa15111DF99Ea2EeB2f8"
+    },
+    "WTC": {
+        "ETH": "0xb7cB1C96dB6B22b0D3d9536E0108d062BD488F74",
+        "BSC": ""
+    },
+    "XZC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "IOTA": {
+        "ETH": "",
+        "BSC": "0xd944f1D1e9d5f9Bb90b62f9D45e447D989580782"
+    },
+    "KNC": {
+        "ETH": "",
+        "BSC": "0xfe56d5892BDffC7BF58f2E84BE1b2C32D21C308b"
+    },
+    "BNT": {
+        "ETH": "0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C",
+        "BSC": "0x0eC04ECe89609E545b8768E303986421FFc32eaF"
+    },
+    "DASH": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ZIL": {
+        "ETH": "0x05f4a42e251f2d52b8ed15E9FEdAacFcEF1FAD27",
+        "BSC": "0xb86AbCb37C3A4B64f74f59301AFF131a1BEcC787"
+    },
+    "VIB": {
+        "ETH": "0x2C974B2d0BA1716E644c1FC59982a89DDD2fF724",
+        "BSC": ""
+    },
+    "VIA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "JNT": {
+        "ETH": "0xa5Fd1A791C4dfcaacC963D4F73c6Ae5824149eA7",
+        "BSC": ""
+    },
+    "SNGLS": {
+        "ETH": "0xaeC2E87E0A235266D9C5ADc9DEb4b2E29b54D009",
+        "BSC": ""
+    },
+    "DBC": {
+        "ETH": "0x95408930d6323Ac7aa69e6C2CBFE58774D565fa8",
+        "BSC": "0x220e6A613F00c79025d5611B73639E045B186fF8"
+    },
+    "SNM": {
+        "ETH": "0x46d0DAc0926fa16707042CAdC23F1EB4141fe86B",
+        "BSC": "0x9826910FF85baC0874b2D36Aea8AB5cF6181d3fE"
+    },
+    "SNT": {
+        "ETH": "0x744d70FDBE2Ba4CF95131626614a1763DF805B9E",
+        "BSC": "0x97329Bce201D86bbCBeebBB3B03256ABDF7b7De6"
+    },
+    "ONT": {
+        "ETH": "",
+        "BSC": "0xFd7B3A77848f1C2D67E05E54d78d174a0C850335"
+    },
+    "XLM": {
+        "ETH": "",
+        "BSC": "0x914737dfbfdb0DBADe3C9Ff10566Fa920d04ac19"
+    },
+    "OCN": {
+        "ETH": "0x4092678e4E78230F46A1534C0fbc8fA39780892B",
+        "BSC": ""
+    },
+    "EVX": {
+        "ETH": "0xf3Db5Fa2C66B7aF3Eb0C0b782510816cbe4813b8",
+        "BSC": ""
+    },
+    "FUN": {
+        "ETH": "0x419D0d8BdD9aF5e606Ae2232ed285Aff190E711b",
+        "BSC": ""
+    },
+    "NEBL": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AMB": {
+        "ETH": "0x4DC3643DbC642b72C158E7F3d2ff232df61cb6CE",
+        "BSC": "0x95977A9DaA14A00258f89a14F75B6E35d5B730d4"
+    },
+    "LSK": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AION": {
+        "ETH": "0x4CEdA7906a5Ed2179785Cd3A40A69ee8bc99C466",
+        "BSC": ""
+    },
+    "ENG": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ENJ": {
+        "ETH": "",
+        "BSC": "0x09f423aC3C9baBBfF6F94D372b16E4206e71439f"
+    },
+    "NANO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TRX": {
+        "ETH": "0xf230b790E05390FC8295F4d3F60332c93BEd42e2",
+        "BSC": "0x85EAC5Ac2F758618dFa09bDbe0cf174e7d574D5B"
+    },
+    "TNC": {
+        "ETH": "0xd59ffBE33F93aA0ec95EA563c676333100d1dfE0",
+        "BSC": ""
+    },
+    "XRP": {
+        "ETH": "",
+        "BSC": "0x1D2F0da169ceB9fC7B3144628dB156f3F6c60dBE"
+    },
+    "LRC": {
+        "ETH": "0xBBbbCA6A901c926F240b89EacB641d8Aec7AEafD",
+        "BSC": "0x77cCBBcA68958Ee7a1786090c1dcdD45b80DFdF0"
+    },
+    "BTS": {
+        "ETH": "0xf8316C0352B58B100056847Aae6d74808ffF8Bf6",
+        "BSC": "0xc2e1acef50aE55661855E8dcB72adB182A3cC259"
+    },
+    "DOGE": {
+        "ETH": "",
+        "BSC": "0xbA2aE424d960c26247Dd6c32edC70B295c744C43"
+    },
+    "CND": {
+        "ETH": "0xd4c435F5B09F855C3317c8524Cb1F586E42795fa",
+        "BSC": ""
+    },
+    "INS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BTG": {
+        "ETH": "",
+        "BSC": "0x19b15EcBF83CbF9050caea50080DB0dC0027b8Fe"
+    },
+    "BTC": {
+        "ETH": "",
+        "BSC": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+    },
+    "TIME": {
+        "ETH": "0x485d17A6f1B8780392d53D64751824253011A260",
+        "BSC": "0x3b198e26E473b8faB2085b37978e36c9DE5D7f68"
+    },
+    "BTM": {
+        "ETH": "0xcB97e65F07DA24D46BcDD078EBebd7C6E6E3d750",
+        "BSC": ""
+    },
+    "MOD": {
+        "ETH": "0x957c30aB0426e0C93CD8241E2c60392d08c6aC8e",
+        "BSC": "0xd4fBc57B6233F268E7FbA3b66E62719D74deecBc"
+    },
+    "NEO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "KMD": {
+        "ETH": "",
+        "BSC": "0x2003f7ba57Ea956B05B85C60B4B2Ceea9b111256"
+    },
+    "BCHABC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SUB": {
+        "ETH": "0x8D75959f1E61EC2571aa72798237101F084DE63a",
+        "BSC": "0xfd290c590866f8282d89671A85Ac9964b165d682"
+    },
+    "REQ": {
+        "ETH": "0x8f8221aFbB33998d8584A2B05749bA73c37a938a",
+        "BSC": ""
+    },
+    "POLY": {
+        "ETH": "0x9992eC3cF6A55b00978cdDF2b27BC6882d88D1eC",
+        "BSC": "0x61073ED3aCEfAFc5E8F87afAedacf9b8586FB28c"
+    },
+    "ETC": {
+        "ETH": "",
+        "BSC": "0x3d6545b08693daE087E957cb1180ee38B9e3c25E"
+    },
+    "ETH": {
+        "ETH": "ETH",
+        "BSC": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8"
+    },
+    "LUN": {
+        "ETH": "0xfa05A73FfE78ef8f1a739473e462c54bae6567D9",
+        "BSC": ""
+    },
+    "DGB": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DGD": {
+        "ETH": "0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A",
+        "BSC": ""
+    },
+    "POWR": {
+        "ETH": "0x595832F8FC6BF59c85C527fEC3740A1b7a361269",
+        "BSC": ""
+    },
+    "QTUM": {
+        "ETH": "0x9a642d6b3368ddc662CA244bAdf32cDA716005BC",
+        "BSC": ""
+    },
+    "WPR": {
+        "ETH": "0x4CF488387F035FF08c371515562CBa712f9015d4",
+        "BSC": ""
+    },
+    "XVG": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SALT": {
+        "ETH": "0x4156D3342D5c385a87D264F90653733592000581",
+        "BSC": ""
+    },
+    "ELF": {
+        "ETH": "0xbf2179859fc6D5BEE9Bf9158632Dc51678a4100e",
+        "BSC": "0xa3f020a5C92e15be13CAF0Ee5C95cF79585EeCC9"
+    },
+    "BCPT": {
+        "ETH": "0x1c4481750daa5Ff521A2a7490d9981eD46465Dbd",
+        "BSC": ""
+    },
+    "ADX": {
+        "ETH": "0xADE00C28244d5CE17D72E40330B1c318cD12B7c3",
+        "BSC": "0x6bfF4Fb161347ad7de4A625AE5aa3A1CA7077819"
+    },
+    "LTC": {
+        "ETH": "",
+        "BSC": "0x4338665CBB7B2485A8855A139b75D5e34AB0DB94"
+    },
+    "DNT": {
+        "ETH": "0x0AbdAce70D3790235af448C88547603b945604ea",
+        "BSC": "0x2456493e757fDeedF569781F053998A72adfad03"
+    },
+    "WAXP": {
+        "ETH": "0x2A79324c19Ef2B89Ea98b23BC669B7E7c9f8A517",
+        "BSC": ""
+    },
+    "RDN": {
+        "ETH": "0x255Aa6DF07540Cb5d3d297f0D0D4D84cb52bc8e6",
+        "BSC": ""
+    },
+    "XMR": {
+        "ETH": "",
+        "BSC": "0x22A213852Cee93EB6d41601133414d180c5684C2"
+    },
+    "ZEC": {
+        "ETH": "",
+        "BSC": "0x1Ba42e5193dfA8B03D15dd1B86a3113bbBEF8Eeb"
+    },
+    "OMG": {
+        "ETH": "0xd26114cd6EE289AccF82350c8d8487fedB8A0C07",
+        "BSC": ""
+    },
+    "XEM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "RLC": {
+        "ETH": "0x607F4C5BB672230e8672085532f7e901544a7375",
+        "BSC": ""
+    },
+    "WAVES": {
+        "ETH": "0x1cF4592ebfFd730c7dc92c1bdFFDfc3B9EfCf29a",
+        "BSC": ""
+    },
+    "WINGS": {
+        "ETH": "0x667088b212ce3d06a1b553a7221E1fD19000d9aF",
+        "BSC": "0x0487b824c8261462F88940f97053E65bDb498446"
+    },
+    "BAT": {
+        "ETH": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
+        "BSC": "0x101d82428437127bF1608F699CD651e6Abf9766E"
+    },
+    "NULS": {
+        "ETH": "0xa2791BdF2D5055Cda4d46EC17f9F429568275047",
+        "BSC": "0x8CD6e29d3686d24d3C2018CEe54621eA0f89313B"
+    },
+    "GLM": {
+        "ETH": "0x7DD9c5Cba05E151C895FDe1CF355C9A1D5DA6429",
+        "BSC": ""
+    },
+    "RCN": {
+        "ETH": "0xF970b8E36e23F7fC3FD752EeA86f8Be8D83375A6",
+        "BSC": ""
+    },
+    "UKG": {
+        "ETH": "0x24692791Bc444c5Cd0b81e3CBCaba4b04Acd1F3B",
+        "BSC": ""
+    },
+    "CVC": {
+        "ETH": "0x24692791Bc444c5Cd0b81e3CBCaba4b04Acd1F3B",
+        "BSC": "0xc6F0a9b75Fa529DCc0F90459e30684E7Ed9A9Ea6"
+    },
+    "PHB": {
+        "ETH": "0x67D9417C9C3c250f61A83C7e8658daC487B56B09",
+        "BSC": "0x0409633A72D846fc5BBe2f98D88564D35987904D"
+    },
+    "PIVX": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GAS": {
+        "ETH": "0x6Bba316c48b49BD1eAc44573c5c871ff02958469",
+        "BSC": ""
+    },
+    "PPT": {
+        "ETH": "0xd4fa1460F537bb9085d22C7bcCB5DD450Ef28e3a",
+        "BSC": ""
+    },
+    "NCASH": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "POE": {
+        "ETH": "0x0e0989b1f9B8A38983c2BA8053269Ca62Ec9B195",
+        "BSC": ""
+    },
+    "ZPT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AE": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AAVE": {
+        "ETH": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+        "BSC": "0xfb6115445Bff7b52FeB98650C87f44907E58f802"
+    },
+    "ZRX": {
+        "ETH": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
+        "BSC": ""
+    },
+    "STORJ": {
+        "ETH": "0xB64ef51C888972c908CFacf59B47C1AfBC0Ab8aC",
+        "BSC": ""
+    },
+    "MTH": {
+        "ETH": "0xaF4DcE16Da2877f8c9e00544c93B62Ac40631F16",
+        "BSC": ""
+    },
+    "ICX": {
+        "ETH": "0xbA61DabC6ecA684273E0a21a4Fe34a86e8EFFfAb",
+        "BSC": ""
+    },
+    "MTL": {
+        "ETH": "0xF433089366899D83a9f26A773D59ec7eCF30355e",
+        "BSC": ""
+    },
+    "GVT": {
+        "ETH": "0x3ADb04E127b9C0a5D36094125669d4603AC52a0c",
+        "BSC": "0xf25868b9E9C62f12192650AC668a2AA69f965f44"
+    },
+    "MCO": {
+        "ETH": "0xB63B606Ac810a52cCa15e44bB630fd42D8d1d83d",
+        "BSC": ""
+    },
+    "QSP": {
+        "ETH": "0x99ea4dB9EE77ACD40B119BD1dC4E33e1C070b80d",
+        "BSC": ""
+    },
+    "ARK": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "QLC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ARN": {
+        "ETH": "",
+        "BSC": "0xBA5F11b16B155792Cf3B2E6880E8706859A8AEB6"
+    },
+    "SPANK": {
+        "ETH": "0x42d6622deCe394b54999Fbd73D108123806f6a18",
+        "BSC": ""
+    },
+    "GXS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BCD": {
+        "ETH": "0x660B612ec57754d949AC1A09D0c2937A010dEe05",
+        "BSC": ""
+    },
+    "WAN": {
+        "ETH": "0x5Fc6DE61258e63706543bb57619b99cC0E5a5A1F",
+        "BSC": ""
+    },
+    "SRN": {
+        "ETH": "0x68d57c9a1C35f63E2c83eE8e49A64e9d70528D25",
+        "BSC": "0x124831BB885DF3c4bf88176A478Ff1b3B95f3769"
+    },
+    "OST": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "LINK": {
+        "ETH": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+        "BSC": ""
+    },
+    "AST": {
+        "ETH": "0x27054b13b1B798B345b591a4d22e6562d47eA75a",
+        "BSC": "0x4Cae95d03C85Ae462dAeC44d5426f547A26FAf47"
+    },
+    "TIX": {
+        "ETH": "0xEa1f346faF023F974Eb5adaf088BbCdf02d761F4",
+        "BSC": ""
+    },
+    "CANN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SIB": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "EXP": {
+        "ETH": "",
+        "BSC": "0x21F2d04191cC95718ebDb166C53Ef8B8E5F21DEa"
+    },
+    "EGC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SPR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "LBC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "HST": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DCR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "XHV": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "OK": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "UBQ": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ETN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ACT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "REP": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BLZ": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "LOOM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "EFX": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CPX": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "NEXO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "EOSD": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "QKC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "STORM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CMT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ZCO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DAI": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TEN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "KRM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GRS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "NPXS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "USDT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TUSD": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DOCK": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "HOT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ARDR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DENT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MFT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "NAS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "KEY": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AGI": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DATA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "THETA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "IOTX": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SKY": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ZEN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CLOAK": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "POA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CHAT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "APPC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "EDO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GTO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TNB": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "WABI": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "FUEL": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DLT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BLT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BFT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "RDD": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "FTC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AID": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "XDN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BKX": {
+        "ETH": "0x45245bc59219eeaAF6cD3f382e078A461FF9De7B",
+        "BSC": ""
+    },
+    "EMC": {
+        "ETH": "0x22D583f97C600978a160885172703C750a5209bE",
+        "BSC": ""
+    },
+    "PART": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AUR": {
+        "ETH": "0x73A1163EA930A0a67dFEFB9C3713Ef0923755B78",
+        "BSC": ""
+    },
+    "XST": {
+        "ETH": "0x91383A15C391c142b80045D8b4730C1c37ac0378",
+        "BSC": ""
+    },
+    "VEE": {
+        "ETH": "0x340D2bdE5Eb28c1eed91B2f790723E3B160613B7",
+        "BSC": ""
+    },
+    "GBYTE": {
+        "ETH": "0x31F69dE127C8A0fF10819C0955490a4Ae46fcc2a",
+        "BSC": ""
+    },
+    "HMQ": {
+        "ETH": "0xcbCC0F036ED4788F63FC0fEE32873d6A7487b908",
+        "BSC": ""
+    },
+    "CLAM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ADT": {
+        "ETH": "0xD0D6D6C5Fe4a677D343cC433536BB717bAe167dD",
+        "BSC": ""
+    },
+    "CMCT": {
+        "ETH": "0x47bc01597798DCD7506DCCA36ac4302fc93a8cFb",
+        "BSC": ""
+    },
+    "CRB": {
+        "ETH": "",
+        "BSC": "0x518afa06aECA8dD0946B89a565e51F5a91d81176"
+    },
+    "FCT": {
+        "ETH": "0x1BBDE9d59578F4Ae9C38e32828DDBB39384E1E84",
+        "BSC": "0xce7709B026ED17B25fEDF64b6A4c48F23580c429"
+    },
+    "ION": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MEME": {
+        "ETH": "0x42dbBd5ae373FEA2FC320F62d44C058522Bb3758",
+        "BSC": ""
+    },
+    "SLS": {
+        "ETH": "",
+        "BSC": "0xf9a8bC0923dde7A3DFC7cF21c4B3A63805679912"
+    },
+    "NGC": {
+        "ETH": "0x72dD4b6bd852A3AA172Be4d6C5a6dbEc588cf131",
+        "BSC": ""
+    },
+    "IOP": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BAY": {
+        "ETH": "",
+        "BSC": "0x5F64b52B76c708030185aA79a3Af383A96c2A6D3"
+    },
+    "RFR": {
+        "ETH": "0xd0929d411954c47438dc1d871dd6081F5C5e149c",
+        "BSC": ""
+    },
+    "GUP": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "XEL": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TUBE": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MLN": {
+        "ETH": "0xec67005c4E498Ec7f55E092bd1d35cbC47C91892",
+        "BSC": "0xBCB62eD4fa6846790E89FcEb6E9Bf24921023b58"
+    },
+    "ANT": {
+        "ETH": "0xa117000000f279D81A1D3cc75430fAA017FA5A2e",
+        "BSC": ""
+    },
+    "UP": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "VRC": {
+        "ETH": "",
+        "BSC": "0xFb5E19b6840755E9aA3Bc7f1bdc1725E3a8aE215"
+    },
+    "NLG": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "EMC2": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "FLO": {
+        "ETH": "",
+        "BSC": "0x2263bF3C00787a7cfA17aef830261D1FE342FD5B"
+    },
+    "DCT": {
+        "ETH": "0x7df3b21371E59385db9BfcfA45301FFD659c43A0",
+        "BSC": ""
+    },
+    "NLC2": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DYN": {
+        "ETH": "0x65167E381388Bc803Aa2F22cd99d093068E98007",
+        "BSC": "0xbc543B6361eD72AB4C6f91CCbb67A94A219DE3f5"
+    },
+    "BITB": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GOLOS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GLC": {
+        "ETH": "0x65b7CCB6d45fe35325c1dFe6DC1a1bCF6c3A5926",
+        "BSC": "0x6C93931a8ac1A94b7DdE231a19a33D2a5cF3BaB4"
+    },
+    "GAME": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "PRO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MUE": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DMT": {
+        "ETH": "0x2ccbFF3A042c68716Ed2a2Cb0c544A9f1d1935E1",
+        "BSC": ""
+    },
+    "PTOY": {
+        "ETH": "0x8Ae4BF2C33a8e667de34B54938B0ccD03Eb8CC06",
+        "BSC": ""
+    },
+    "ENRG": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "QRL": {
+        "ETH": "0x697beac28B09E122C4332D163985e8a73121b97F",
+        "BSC": ""
+    },
+    "SPHR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "XMG": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "NEOS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "RVR": {
+        "ETH": "0xb9FF205b3eA3948C3dC02C3d9131b3D91d41F856",
+        "BSC": ""
+    },
+    "XMY": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DMD": {
+        "ETH": "",
+        "BSC": "0xF7ebb4dBa75e87E670Dd1C1AC8FbC0688c8F2c1a"
+    },
+    "GNO": {
+        "ETH": "0x6810e776880C02933D47DB1b9fc05908e5386b96",
+        "BSC": ""
+    },
+    "LET": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SOUL": {
+        "ETH": "0x75858677e27C930FB622759FeafFeE2b754Af07F",
+        "BSC": ""
+    },
+    "IXT": {
+        "ETH": "0xfcA47962D45ADFdfd1Ab2D972315dB4ce7CCf094",
+        "BSC": ""
+    },
+    "ODE": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BTT": {
+        "ETH": "0xC669928185DbCE49d2230CC9B0979BE6DC797957",
+        "BSC": "0x8595F9dA7b868b1822194fAEd312235E43007b49"
+    },
+    "BCHSV": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "FET": {
+        "ETH": "0xaea46A60368A7bD060eec7DF8CBa43b7EF41Ad85",
+        "BSC": ""
+    },
+    "PAX": {
+        "ETH": "0xc1D204d77861dEf49b6E769347a883B15EC397Ff",
+        "BSC": "0xB9Fd14912CD2fF2F0D6d3C2B46Ddc73705D77D3c"
+    },
+    "USDC": {
+        "ETH": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+        "BSC": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
+    },
+    "MKR": {
+        "ETH": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+        "BSC": "0x5f0Da599BB2ccCfcf6Fdfd7D81743B6020864350"
+    },
+    "VET": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BNB": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ATOM": {
+        "ETH": "0xdaf0b40b961CA51Fc914fbabdA8E779619576caD",
+        "BSC": "0x0Eb3a705fc54725037CC9e008bDede697f62F335"
+    },
+    "MATIC": {
+        "ETH": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+        "BSC": "0xCC42724C6683B7E57334c4E856f4c9965ED682bD"
+    },
+    "XTZ": {
+        "ETH": "",
+        "BSC": "0x16939ef78684453bfDFb47825F8a5F714f12623a"
+    },
+    "NRG": {
+        "ETH": "0x14121EEe7995FFDF47ED23cfFD0B5da49cbD6EB3",
+        "BSC": ""
+    },
+    "TEL": {
+        "ETH": "0x467Bccd9d29f223BcE8043b84E8C8B282827790F",
+        "BSC": ""
+    },
+    "ALGO": {
+        "ETH": "0xDe4317210f83A62e7173ac312E5704a3739D0d18",
+        "BSC": ""
+    },
+    "ERD": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CELR": {
+        "ETH": "0x4F9254C83EB525f9FCf346490bbb3ed28a81C667",
+        "BSC": "0x1f9f6a696C6Fd109cD3956F45dC709d2b3902163"
+    },
+    "ONE": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MITH": {
+        "ETH": "0x3893b9422Cd5D70a81eDeFfe3d5A1c6A978310BB",
+        "BSC": ""
+    },
+    "FTM": {
+        "ETH": "0x4E15361FD6b4BB609Fa63C81A2be19d873717870",
+        "BSC": "0xAD29AbB318791D579433D831ed122aFeAf29dcfe"
+    },
+    "WIN": {
+        "ETH": "0x9e3f0FC2A9eA1Ec8D9e51A7A34c20b777021b030",
+        "BSC": "0xaeF0d72a118ce24feE3cD1d43d383897D05B4e99"
+    },
+    "ANKR": {
+        "ETH": "0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4",
+        "BSC": "0xf307910A4c7bbc79691fD374889b36d8531B08e3"
+    },
+    "DUSK": {
+        "ETH": "0x940a2dB1B7008B6C776d4faaCa729d6d4A4AA551",
+        "BSC": "0xB2BD0749DBE21f623d9BABa856D3B0f0e1BFEc9C"
+    },
+    "COS": {
+        "ETH": "0x7d3cb11f8c13730C24D01826d8F2005F0e1b348F",
+        "BSC": "0x96Dd399F9c3AFda1F194182F71600F1B65946501"
+    },
+    "LEO": {
+        "ETH": "0x2AF5D2aD76741191D15Dfe7bF6aC92d4Bd912Ca3",
+        "BSC": ""
+    },
+    "CRO": {
+        "ETH": "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b",
+        "BSC": ""
+    },
+    "HEDG": {
+        "ETH": "0xF1290473E210b2108A85237fbCd7b6eb42Cc654F",
+        "BSC": "0x0d2FB112A30A24D9e563b0fb3B6bbc2C18B6c6cD"
+    },
+    "FTT": {
+        "ETH": "0x2AEC18c5500f21359CE1BEA5Dc1777344dF4C0Dc",
+        "BSC": ""
+    },
+    "SNX": {
+        "ETH": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
+        "BSC": "0x9Ac983826058b8a9C7Aa1C9171441191232E8404"
+    },
+    "HT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ONG": {
+        "ETH": "0xd341d1680Eeee3255b8C4c75bCCE7EB57f144dAe",
+        "BSC": ""
+    },
+    "WRX": {
+        "ETH": "",
+        "BSC": "0x8e17ed70334C87eCE574C9d537BC153d8609e2a3"
+    },
+    "TNT": {
+        "ETH": "0x08f5a9235B08173b7569F83645d2c7fB55e8cCD8",
+        "BSC": ""
+    },
+    "YOYO": {
+        "ETH": "",
+        "BSC": "0x327AF2DE267560Bd7b3D10Ee9c93e5B7d6b63f98"
+    },
+    "VITE": {
+        "ETH": "0xadd5E881984783dD432F80381Fb52F45B53f3e70",
+        "BSC": "0x2794DAD4077602eD25A88d03781528D1637898B4"
+    },
+    "VIBE": {
+        "ETH": "0xe8Ff5C9c75dEb346acAc493C463C8950Be03Dfba",
+        "BSC": ""
+    },
+    "TROY": {
+        "ETH": "0x4574562E9310a94F9Ca962bd23168d8a06875b1A",
+        "BSC": ""
+    },
+    "TOMO": {
+        "ETH": "0x8b353021189375591723E7384262F45709A3C3dC",
+        "BSC": ""
+    },
+    "TCT": {
+        "ETH": "0x4824A7b64E3966B0133f4f4FFB1b9D6bEb75FFF7",
+        "BSC": "0xCA0a9Df6a8cAD800046C1DDc5755810718b65C44"
+    },
+    "PERL": {
+        "ETH": "0xeca82185adCE47f39c684352B0439f030f860318",
+        "BSC": "0x0F9E4D49f25de22c2202aF916B681FBB3790497B"
+    },
+    "OAX": {
+        "ETH": "0x701C244b988a513c945973dEFA05de933b23Fe1D",
+        "BSC": ""
+    },
+    "DREP": {
+        "ETH": "0x3Ab6Ed69Ef663bd986Ee59205CCaD8A20F98b4c2",
+        "BSC": "0xEC583f25A049CC145dA9A256CDbE9B6201a705Ff"
+    },
+    "CTXC": {
+        "ETH": "0xEa11755Ae41D889CeEc39A63E6FF75a02Bc1C00d",
+        "BSC": ""
+    },
+    "COCOS": {
+        "ETH": "0x0C6f5F7D555E7518f6841a79436BD2b1Eef03381",
+        "BSC": "0xAb301DaE71f5B386C566f484e636Aee60318F12F"
+    },
+    "CHZ": {
+        "ETH": "0x3506424F91fD33084466F402d5D97f05F8e3b4AF",
+        "BSC": ""
+    },
+    "ARPA": {
+        "ETH": "0x67FB4459e97C035f2E8483e6972134ECAb2f8895",
+        "BSC": "0x6F769E65c14Ebd1f68817F5f1DcDb61Cfa2D6f7e"
+    },
+    "SOL": {
+        "ETH": "",
+        "BSC": "0xFEa6aB80cd850c3e63374Bc737479aeEC0E8b9a1"
+    },
+    "CDT": {
+        "ETH": "0x177d39AC676ED1C67A2b268AD7F1E58826E5B0af",
+        "BSC": "0x0cBD6fAdcF8096cC9A43d90B45F65826102e3eCE"
+    },
+    "CVT": {
+        "ETH": "0x88930072F583936F506CE1f1d5Fe69290C2D6A2a",
+        "BSC": "0xF72B0F79dC66f270FE52C67e56e12872F86cae2d"
+    },
+    "HIVE": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "RVN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TFUEL": {
+        "ETH": "",
+        "BSC": "0x2090c8295769791ab7A3CF1CC6e0AA19F35e441A"
+    },
+    "MBL": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "INR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SERO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ATT": {
+        "ETH": "0x887834D3b8D450B6bAB109c252Df3DA286d73CE4",
+        "BSC": ""
+    },
+    "OKB": {
+        "ETH": "0x75231F58b43240C9718Dd58B4967c5114342a86c",
+        "BSC": ""
+    },
+    "FXC": {
+        "ETH": "0xc92D6E3E64302C59d734f3292E2A13A13D7E1817",
+        "BSC": "0x3D3Abf5a97F5E8c1a546a7922d1ad767552800Fb"
+    },
+    "REN": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "DX": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SEELE": {
+        "ETH": "0xB1eeF147028E9f480DbC5ccaA3277D417D1b85F0",
+        "BSC": ""
+    },
+    "NMR": {
+        "ETH": "0x1776e1F26f98b1A5dF9cD347953a26dd3Cb46671",
+        "BSC": ""
+    },
+    "UBT": {
+        "ETH": "0x8400D94A5cb0fa0D041a3788e395285d61c9ee5e",
+        "BSC": "0x4Cf3c00a6e32829c0C7857e42D4931e5ac5E5b06"
+    },
+    "CEL": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "CHSB": {
+        "ETH": "0xba9d4199faB4f26eFE3551D490E3821486f135Ba",
+        "BSC": ""
+    },
+    "COMP": {
+        "ETH": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
+        "BSC": "0x52CE071Bd9b1C4B00A0b92D298c512478CaD67e8"
+    },
+    "AR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "LPT": {
+        "ETH": "0x58b6A8A3302369DAEc383334672404Ee733aB239",
+        "BSC": ""
+    },
+    "KEEP": {
+        "ETH": "0x85Eee30c52B0b379b046Fb0F85F4f3Dc3009aFEC",
+        "BSC": ""
+    },
+    "OGN": {
+        "ETH": "0x8207c1FfC5B6804F6024322CcF34F29c3541Ae26",
+        "BSC": ""
+    },
+    "RNDR": {
+        "ETH": "0x6De037ef9aD2725EB40118Bb1702EBb27e4Aeb24",
+        "BSC": ""
+    },
+    "BAL": {
+        "ETH": "0xba100000625a3754423978a60c9317c58a424e3D",
+        "BSC": ""
+    },
+    "STMX": {
+        "ETH": "0xbE9375C6a420D2eEB258962efB95551A5b722803",
+        "BSC": ""
+    },
+    "SYLO": {
+        "ETH": "0xf293d23BF2CDc05411Ca0edDD588eb1977e8dcd4",
+        "BSC": ""
+    },
+    "RUNE": {
+        "ETH": "0x3155BA85D5F96b2d030a4966AF206230e46849cb",
+        "BSC": "0xA9776B590bfc2f956711b3419910A5Ec1F63153E"
+    },
+    "BNS": {
+        "ETH": "0x19E2a43Fbbc643C3B2D9667D858D49cAd17bc2b5",
+        "BSC": "0xC1165227519FfD22Fdc77Ceb1037b9b284eeF068"
+    },
+    "AMPL": {
+        "ETH": "0xD46bA6D942050d489DBd938a2C909A5d5039A161",
+        "BSC": "0xDB021b1B247fe2F1fa57e0A87C748Cc1E321F07F"
+    },
+    "BAND": {
+        "ETH": "0xBA11D00c5f74255f56a5E366F4F77f5A186d7f55",
+        "BSC": "0xAD6cAEb32CD2c308980a548bD0Bc5AA4306c6c18"
+    },
+    "STX": {
+        "ETH": "0x006BeA43Baa3f7A6f765F14f10A1a1b08334EF45",
+        "BSC": ""
+    },
+    "HNT": {
+        "ETH": "0xeEFe042299c0A64038C17fA32AE3F6Ced0663A41",
+        "BSC": ""
+    },
+    "OCEAN": {
+        "ETH": "0x967da4048cD07aB37855c090aAF366e4ce1b9F48",
+        "BSC": ""
+    },
+    "RSR": {
+        "ETH": "0x320623b8E4fF03373931769A31Fc52A4E78B5d70",
+        "BSC": ""
+    },
+    "UMA": {
+        "ETH": "0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828",
+        "BSC": ""
+    },
+    "WBTC": {
+        "ETH": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "BSC": ""
+    },
+    "JST": {
+        "ETH": "0x3bCd95DAc783C2B60c34dbC77a3E7FA1572B8fd0",
+        "BSC": "0xEE6cacDDd3A9370d87dB581EE6728226883578e5"
+    },
+    "AVA": {
+        "ETH": "",
+        "BSC": "0x13616F44Ba82D63c8C0DC3Ff843D36a8ec1c05a9"
+    },
+    "YFI": {
+        "ETH": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
+        "BSC": "0x88f1A5ae2A3BF98AEAF342D26B30a79438c9142e"
+    },
+    "FIO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "IRIS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "VTHO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SXP": {
+        "ETH": "0x8CE9137d39326AD0cD6491fb5CC0CbA0e089b6A9",
+        "BSC": ""
+    },
+    "CRV": {
+        "ETH": "0xD533a949740bb3306d119CC777fa900bA034cd52",
+        "BSC": "0x47BEAd2563dCBf3bF2c9407fEa4dC236fAbA485A"
+    },
+    "OXT": {
+        "ETH": "0x4575f41308EC1483f3d399aa9a2826d74Da13Deb",
+        "BSC": ""
+    },
+    "LUNA": {
+        "ETH": "0x43fb95c7afA1Ac1E721F33C695b2A0A94C7ddAb2",
+        "BSC": "0x156ab3346823B651294766e23e6Cf87254d68962"
+    },
+    "PAXG": {
+        "ETH": "",
+        "BSC": "0x7950865a9140cB519342433146Ed5b40c6F210f7"
+    },
+    "IDEX": {
+        "ETH": "0xB705268213D593B8FD88d3FDEFF93AFF5CbDcfAE",
+        "BSC": ""
+    },
+    "CELO": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "WNXM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "TRB": {
+        "ETH": "0x88dF592F8eb5D7Bd38bFeF7dEb0fBc02cf3778a0",
+        "BSC": ""
+    },
+    "BZRX": {
+        "ETH": "0x56d811088235F11C8920698a204A5010a788f4b3",
+        "BSC": ""
+    },
+    "SUSHI": {
+        "ETH": "0x6B3595068778DD592e39A122f4f5a5cF09C90fE2",
+        "BSC": "0x947950BcC74888a40Ffa2593C5798F11Fc9124C4"
+    },
+    "YFII": {
+        "ETH": "0x4be40bc9681D0A7C24A99b4c92F85B9053Fc2A45",
+        "BSC": ""
+    },
+    "RFUEL": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "OM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "UNI": {
+        "ETH": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+        "BSC": ""
+    },
+    "DOT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "FRONT": {
+        "ETH": "0xf8C3527CC04340b208C854E985240c02F7B7793f",
+        "BSC": ""
+    },
+    "EZ": {
+        "ETH": "0x00AbA6fE5557De1a1d565658cBDdddf7C710a1eb",
+        "BSC": ""
+    },
+    "SRM": {
+        "ETH": "0x476c5E26a75bd202a9683ffD34359C0CC15be0fF",
+        "BSC": ""
+    },
+    "DODO": {
+        "ETH": "0x43Dfc4159D86F3A37A5A4B3D4580b888ad7d4DDd",
+        "BSC": ""
+    },
+    "CAKE": {
+        "ETH": "",
+        "BSC": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+    },
+    "HBAR": {
+        "ETH": "",
+        "BSC": "0x926Cc5B32c1e88D7532DEFf023ecECDd66f37bfE"
+    },
+    "SFP": {
+        "ETH": "0x069d733a2A1cd42B130804B46BF2bB3D3f02aE9c",
+        "BSC": "0xD41FDb03Ba84762dD66a0af1a6C8540FF1ba5dfb"
+    },
+    "AVAX": {
+        "ETH": "",
+        "BSC": "0x1CE0c2827e2eF14D5C4f29a091d735A204794041"
+    },
+    "1INCH": {
+        "ETH": "0x111111111117dC0aa78b770fA6A738034120C302",
+        "BSC": "0x111111111117dC0aa78b770fA6A738034120C302"
+    },
+    "EGLD": {
+        "ETH": "0xe3fb646fC31Ca12657B17070bC31a52E323b8543",
+        "BSC": "0xbF7c81FFF98BbE61B40Ed186e4AfD6DDd01337fe"
+    },
+    "COTI": {
+        "ETH": "0xDDB3422497E61e13543BeA06989C0789117555c5",
+        "BSC": "0xAdBAF88B39D37Dc68775eD1541F1bf83A5A45feB"
+    },
+    "CREAM": {
+        "ETH": "0x2ba592F78dB6436527729929AAf6c908497cB200",
+        "BSC": "0xd4CB328A82bDf5f03eB737f37Fa6B370aef3e888"
+    },
+    "CTSI": {
+        "ETH": "0x491604c0FDF08347Dd1fa4Ee062a822A5DD06B5D",
+        "BSC": "0x8dA443F84fEA710266C8eB6bC34B71702d033EF2"
+    },
+    "DEXE": {
+        "ETH": "0xde4EE8057785A7e8e800Db58F9784845A5C2Cbd6",
+        "BSC": "0x039cB485212f996A9DBb85A9a75d898F94d38dA6"
+    },
+    "FIL": {
+        "ETH": "",
+        "BSC": "0x0D8Ce2A99Bb6e3B7Db580eD848240e4a0F9aE153"
+    },
+    "FIRO": {
+        "ETH": "",
+        "BSC": "0xd5d0322b6bAb6a762C79f8c81A0B674778E13aeD"
+    },
+    "GRT": {
+        "ETH": "0xc944E90C64B2c07662A292be6244BDf05Cda44a7",
+        "BSC": ""
+    },
+    "KSM": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "NEAR": {
+        "ETH": "0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63",
+        "BSC": "0x1Fa4a73a3F0133f0025378af00236f3aBDEE5D63"
+    },
+    "STQ": {
+        "ETH": "",
+        "BSC": "0x5c3a228510D246b78a3765C20221Cbf3082b44a4"
+    },
+    "UFT": {
+        "ETH": "0x0202Be363B8a4820f3F4DE7FaF5224fF05943AB1",
+        "BSC": "0x2645d5f59D952ef2317C8e0AaA5A61c392cCd44d"
+    },
+    "SHIB": {
+        "ETH": "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE",
+        "BSC": "0x1F625A09F8073bFb136a599d43B134960EB5251B"
+    },
+    "NKN": {
+        "ETH": "",
+        "BSC": "0x5Cf04716BA20127F1E2297AdDCf4B5035000c9eb"
+    },
+    "ALPHA": {
+        "ETH": "0xa1faa113cbE53436Df28FF0aEe54275c13B40975",
+        "BSC": "0xa1faa113cbE53436Df28FF0aEe54275c13B40975"
+    },
+    "ALICE": {
+        "ETH": "0xAC51066d7bEC65Dc4589368da368b212745d63E8",
+        "BSC": "0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+    },
+    "SLP": {
+        "ETH": "0xCC8Fa225D80b9c7D42F96e9570156c65D6cAAa25",
+        "BSC": "0x070a08BeEF8d36734dD67A491202fF35a6A16d97"
+    },
+    "DYDX": {
+        "ETH": "",
+        "BSC": "0x92D6C1e31e14520e676a687F0a93788B716BEff5"
+    },
+    "GALA": {
+        "ETH": "0x15D4c048F83bd7e37d49eA4C83a07267Ec4203dA",
+        "BSC": "0x7dDEE176F665cD201F93eEDE625770E2fD911990"
+    },
+    "AUDIO": {
+        "ETH": "0x18aAA7115705e8be94bfFEBDE57Af9BFc265B998",
+        "BSC": ""
+    },
+    "AXS": {
+        "ETH": "0xBB0E17EF65F82Ab018d8EDd776e8DD940327B28b",
+        "BSC": "0x715D400F88C167884bbCc41C5FeA407ed4D2f8A0"
+    },
+    "ICP": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "MASK": {
+        "ETH": "",
+        "BSC": "0x2eD9a5C8C13b93955103B9a7C167B67Ef4d568a3"
+    },
+    "PHA": {
+        "ETH": "",
+        "BSC": "0x0112e557d400474717056C4e6D40eDD846F38351"
+    },
+    "QNT": {
+        "ETH": "0x4a220E6096B25EADb88358cb44068A3248254675",
+        "BSC": ""
+    },
+    "TRIBE": {
+        "ETH": "0xc7283b66Eb1EB5FB86327f08e1B5816b0720212B",
+        "BSC": ""
+    },
+    "FORTH": {
+        "ETH": "0x77FbA179C79De5B7653F68b5039Af940AdA60ce0",
+        "BSC": ""
+    },
+    "ORN": {
+        "ETH": "",
+        "BSC": "0xe4CA1F75ECA6214393fCE1C1b316C237664EaA8e"
+    },
+    "TRU": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BOND": {
+        "ETH": "0x0391D2021f89DC339F60Fff84546EA23E337750f",
+        "BSC": ""
+    },
+    "RLY": {
+        "ETH": "0xf1f955016EcbCd7321c7266BccFB96c68ea5E49b",
+        "BSC": ""
+    },
+    "AGLD": {
+        "ETH": "0x32353A6C91143bfd6C7d363B546e62a9A2489A20",
+        "BSC": ""
+    },
+    "PUSH": {
+        "ETH": "0xf418588522d5dd018b425E472991E52EBBeEEEEE",
+        "BSC": ""
+    },
+    "BADGER": {
+        "ETH": "0x3472A5A71965499acd81997a54BBA8D852C6E53d",
+        "BSC": ""
+    },
+    "RARI": {
+        "ETH": "0xFca59Cd816aB1eaD66534D82bc21E7515cE441CF",
+        "BSC": "0x856333816B8E934bCF4C08FAf00Dd46e5Ac0aaeC"
+    },
+    "CAS": {
+        "ETH": "0x91C2C922A5Db860E8B1A6775B7fE00dFf106a8E0",
+        "BSC": "0x780207B8C0Fdc32cF60E957415bFa1f2d4d9718c"
+    },
+    "CKB": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AUCTION": {
+        "ETH": "0xA9B1Eb5908CfC3cdf91F9B8B3a74108598009096",
+        "BSC": ""
+    },
+    "ASM": {
+        "ETH": "0xbc48A7026C5c0c6DAE827C2eA2b9Cbe36C9B0b79",
+        "BSC": ""
+    },
+    "BTRST": {
+        "ETH": "0x799ebfABE77a6E34311eeEe9825190B9ECe32824",
+        "BSC": ""
+    },
+    "RAD": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "WLUNA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "XYO": {
+        "ETH": "0x55296f69f40Ea6d20E478533C15A6B08B654E758",
+        "BSC": ""
+    },
+    "JASMY": {
+        "ETH": "0x7420B4b9a0110cdC71fB720908340C03F9Bc03EC",
+        "BSC": "0x15669CF161946C09a8B207650BfBB00e3d8A2E3E"
+    },
+    "WCFG": {
+        "ETH": "0xc221b7E65FfC80DE234bbB6667aBDd46593D34F0",
+        "BSC": ""
+    },
+    "HUSD": {
+        "ETH": "0xdF574c24545E5FfEcb9a659c229253D4111d87e1",
+        "BSC": ""
+    },
+    "SAND": {
+        "ETH": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0",
+        "BSC": "0x67b725d7e342d7B611fa85e859Df9697D9378B2e"
+    },
+    "BICO": {
+        "ETH": "0xF17e65822b568B3903685a7c9F496CF7656Cc6C2",
+        "BSC": ""
+    },
+    "COVAL": {
+        "ETH": "",
+        "BSC": "0xd15CeE1DEaFBad6C0B3Fd7489677Cc102B141464"
+    },
+    "MCO2": {
+        "ETH": "0xfC98e825A2264D890F9a1e68ed50E1526abCcacD",
+        "BSC": ""
+    },
+    "POLS": {
+        "ETH": "0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa",
+        "BSC": "0x7e624FA0E1c4AbFD309cC15719b7E2580887f570"
+    },
+    "FOX": {
+        "ETH": "0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d",
+        "BSC": "0x02Df2D8120966A143CAaf760CC3AE1D12f9862a7"
+    },
+    "SPELL": {
+        "ETH": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
+        "BSC": ""
+    },
+    "SUPER": {
+        "ETH": "",
+        "BSC": "0x51BA0b044d96C3aBfcA52B64D733603CCC4F0d4D"
+    },
+    "API3": {
+        "ETH": "0x0b38210ea11411557c13457D4dA7dC6ea731B88a",
+        "BSC": ""
+    },
+    "IMX": {
+        "ETH": "0x7b35Ce522CB72e4077BaeB96Cb923A5529764a00",
+        "BSC": ""
+    },
+    "MDT": {
+        "ETH": "0x814e0908b12A99FeCf5BC101bB5d0b8B5cDf7d26",
+        "BSC": "0x668DB7aa38eaC6B40c9D13dBE61361DC4c4611d1"
+    },
+    "GODS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "RBN": {
+        "ETH": "0x6123B0049F904d730dB3C36a31167D9d4121fA6B",
+        "BSC": ""
+    },
+    "GYEN": {
+        "ETH": "0xC08512927D12348F6620a698105e1BAac6EcD911",
+        "BSC": ""
+    },
+    "TLM": {
+        "ETH": "0x888888848B652B3E3a0f34c96E00EEC0F3a23F72",
+        "BSC": "0x2222227E22102Fe3322098e4CBfE18cFebD57c95"
+    },
+    "MBOX": {
+        "ETH": "",
+        "BSC": "0x3203c9E46cA618C8C1cE5dC67e7e9D75f5da2377"
+    },
+    "XVS": {
+        "ETH": "",
+        "BSC": "0x151B1e2635A717bcDc836ECd6FbB62B674FE3E1D"
+    },
+    "ALPACA": {
+        "ETH": "0x7cA4408137eb639570F8E647d9bD7B7E8717514A",
+        "BSC": "0x8F0528cE5eF7B51152A59745bEfDD91D97091d2F"
+    },
+    "REEF": {
+        "ETH": "0xFE3E6a25e6b192A42a44ecDDCd13796471735ACf",
+        "BSC": "0xF21768cCBC73Ea5B6fd3C687208a7c2def2d966e"
+    },
+    "QUICK": {
+        "ETH": "0xd2bA23dE8a19316A638dc1e7a9ADdA1d74233368",
+        "BSC": ""
+    },
+    "MINA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SCRT": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ROSE": {
+        "ETH": "0xABea06495aBD2498Ef7371Bda82B0c5269cB8efF",
+        "BSC": ""
+    },
+    "VGX": {
+        "ETH": "0x3C4B6E6e1eA3D4863700D7F76b36B7f3D3f13E3d",
+        "BSC": ""
+    },
+    "NBS": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "SUN": {
+        "ETH": "",
+        "BSC": "0x6526f6Fb59189a2D16D570c201B8e0155f102e18"
+    },
+    "TKO": {
+        "ETH": "0xcA1024B60b00bbd8b5c278F3BBD65B40AAB4e837",
+        "BSC": "0x9f589e3eabe42ebC94A44727b3f3531C0c877809"
+    },
+    "ATA": {
+        "ETH": "0xA2120b9e674d3fC3875f415A7DF52e382F141225",
+        "BSC": "0xA2120b9e674d3fC3875f415A7DF52e382F141225"
+    },
+    "SKL": {
+        "ETH": "0x00c83aeCC790e8a4453e5dD3B0B4b3680501a7A7",
+        "BSC": ""
+    },
+    "NU": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "ILV": {
+        "ETH": "0x767FE9EDC9E0dF98E07454847909b5E959D7ca0E",
+        "BSC": ""
+    },
+    "BURGER": {
+        "ETH": "0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f",
+        "BSC": "0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f"
+    },
+    "ENS": {
+        "ETH": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
+        "BSC": ""
+    },
+    "BEAM": {
+        "ETH": "0x99DcBF7521147AE9Fd3461287e3D3c12160fFC1a",
+        "BSC": ""
+    },
+    "OOKI": {
+        "ETH": "0x0De05F6447ab4D22c8827449EE4bA2D5C288379B",
+        "BSC": ""
+    },
+    "FLOW": {
+        "ETH": "",
+        "BSC": "0x6B9943e598D8dA89757Caa687eC141c961231FA8"
+    },
+    "DEGO": {
+        "ETH": "0x88EF27e69108B2633F8E1C184CC37940A075cC02",
+        "BSC": "0x3FdA9383A84C05eC8f7630Fe10AdF1fAC13241CC"
+    },
+    "CHESS": {
+        "ETH": "0x5f75112bBB4E1aF516fBE3e21528C63DA2B6a1A5",
+        "BSC": "0x20de22029ab63cf9A7Cf5fEB2b737Ca1eE4c82A6"
+    },
+    "PNT": {
+        "ETH": "0x89Ab32156e46F46D02ade3FEcbe5Fc4243B9AAeD",
+        "BSC": "0xdaacB0Ab6Fb34d24E8a67BfA14BF4D95D4C7aF92"
+    },
+    "MDX": {
+        "ETH": "0x9d03393d297E42C135625D450C814892505F1a84",
+        "BSC": "0x9C65AB58d8d978DB963e63f2bfB7121627e3a739"
+    },
+    "ACH": {
+        "ETH": "0xEd04915c23f00A313a544955524EB7DBD823143d",
+        "BSC": "0xBc7d6B50616989655AfD682fb42743507003056D"
+    },
+    "ALCX": {
+        "ETH": "0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF",
+        "BSC": ""
+    },
+    "XEC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "AMP": {
+        "ETH": "0xfF20817765cB7f73d4bde2e66e067E58D11095C2",
+        "BSC": ""
+    },
+    "KDA": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "BTTC": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GLMR": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "INV": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "LQTY": {
+        "ETH": "0x6DEA81C8171D0bA574754EF6F8b412F2Ed88c54D",
+        "BSC": ""
+    },
+    "NCT": {
+        "ETH": "0x9E46A38F5DaaBe8683E10793b06749EEF7D733d1",
+        "BSC": ""
+    },
+    "OriginTrail": {
+        "ETH": "",
+        "BSC": ""
+    },
+    "GFI": {
+        "ETH": "0xdab396cCF3d84Cf2D07C4454e10C8A6F5b008D2b",
+        "BSC": "0xDD6C6C114Db071EFE0BAB6051268227CE64C3fFe"
+    },
+    "ODDZ": {
+        "ETH": "0xCd2828fc4D8E8a0eDe91bB38CF64B1a81De65Bf6",
+        "BSC": "0xCD40F2670CF58720b694968698A5514e924F742d"
+    },
+    "ORBS": {
+        "ETH": "0xff56Cc6b1E6dEd347aA0B7676C85AB0B3D08B0FA",
+        "BSC": "0xeBd49b26169e1b52c04cFd19FCf289405dF55F80"
+    },
+    "PCNT": {
+        "ETH": "0x657B83A0336561C8f64389a6f5aDE675C04b0C3b",
+        "BSC": "0xe9b9c1c38Dab5EAB3B7E2AD295425e89bD8db066"
+    },
+    "RAGE": {
+        "ETH": "0x94804dc4948184fFd7355f62Ccbb221c9765886F",
+        "BSC": "0xD38c1B7b95D359978996e01B8a85286F65B3C011"
+    },
+    "KAI": {
+        "ETH": "",
+        "BSC": "0x39Ae8EEFB05138f418Bb27659c21632Dc1DDAb10"
+    },
+    "JULD": {
+        "ETH": "",
+        "BSC": "0x5A41F637C3f7553dBa6dDC2D3cA92641096577ea"
+    },
+    "HGET": {
+        "ETH": "0x7968bc6a03017eA2de509AAA816F163Db0f35148",
+        "BSC": "0xC7d8D35EBA58a0935ff2D5a33Df105DD9f071731"
+    },
+    "CTX": {
+        "ETH": "0x58FbCE7f305Cc2e3daa9731b575D4C2eC3B5b8bD",
+        "BSC": ""
+    },
+    "DIA": {
+        "ETH": "0x84cA8bc7997272c7CfB4D0Cd3D55cd942B3c9419",
+        "BSC": "0x99956D38059cf7bEDA96Ec91Aa7BB2477E0901DD"
+    },
+    "MPL": {
+        "ETH": "",
+        "BSC": "0xBa007b6170C602C08545ff97395677408688D3a2"
+    },
+    "PLU": {
+        "ETH": "0xD8912C10681D8B21Fd3742244f44658dBA12264E",
+        "BSC": ""
+    },
+    "UNFI": {
+        "ETH": "0x441761326490cACF7aF299725B6292597EE822c2",
+        "BSC": "0x728C5baC3C3e370E372Fc4671f9ef6916b814d8B"
+    },
+    "APE": {
+        "ETH": "0x4d224452801ACEd8B2F0aebE155379bb5D594381",
+        "BSC": "0xC762043E211571eB34f1ef377e5e8e76914962f9"
+    },
+    "BSW": {
+        "ETH": "0xd156Fe77bAeaF08803F23D0B48957d4eb9FC8A56",
+        "BSC": "0x965F527D9159dCe6288a2219DB51fc6Eef120dD1"
+    },
+    "WOO": {
+        "ETH": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B",
+        "BSC": "0x4691937a7508860F876c9c0a2a617E7d9E945D4B"
+    },
+    "ASTR": {
+        "ETH": "0x80E7a4d750aDe616Da896C49049B7EdE9e04C191",
+        "BSC": ""
+    },
+    "ALPINE": {
+        "ETH": "",
+        "BSC": "0x287880Ea252b52b63Cc5f40a2d3E5A44aa665a76"
+    },
+    "ACA": {
+        "ETH": "",
+        "BSC": "0x9EB6935AEa6aFb5Bc6d1A74bE0C2F78280ab6448"
+    }
+}

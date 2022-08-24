@@ -1,34 +1,29 @@
 {
-  "name": "swap-backend",
+  "name": "coinbase-bot",
   "version": "1.0.0",
-  "description": "Node.js + WEB3.js",
+  "description": "Coinbase Pro Node API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon start"
+    "start": "node index.js"
   },
   "keywords": [
     "node.js",
     "express",
     "jwt",
-    "authentication",
-    "mongodb"
+    "authentication"
   ],
   "author": "bezkoder",
   "license": "ISC",
   "dependencies": {
-    "@ethersproject/abi": "^5.6.3",
-    "@nomiclabs/hardhat-ethers": "^2.0.4",
-    "@openzeppelin/hardhat-upgrades": "^1.14.0",
-    "@truffle/hdwallet-provider": "^2.0.8",
     "axios": "^0.25.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "coinbase-pro": "^0.9.0",
     "cors": "^2.8.5",
     "dotenv": "^14.3.2",
     "express": "^4.17.1",
-    "moralis": "^1.11.0",
     "nodemon": "^2.0.16",
-    "pm2": "^5.2.0",
-    "web3": "^1.7.3"
+    "pino": "^8.4.2",
+    "pm2": "^5.2.0"
   }
 }
